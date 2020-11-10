@@ -1,0 +1,7 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.detail %></p>
+<% if @task.completed == true %>
+  <p><%= 🔘 This task is complete! %></p>
+<% else %>
+  <p><%= ⚪️ This task is not complete! %></p>
+<% end %>
